@@ -12,7 +12,6 @@
   left: 0;
   right: 0;
   z-index: 1;
-  /* margin-bottom: 30px; */
   background: #f8f9fa;
   border-bottom: 1px solid #ddd;
   height: 60px;
@@ -53,7 +52,13 @@ a{
   display: flex;
 }
 
-/* header */
+.btn-blue {
+  background: #0061FF;
+  color: #fff;
+  padding: 5px;
+}
+
+/* ----------------------header-------------------- */
 
 .navbar ul{
   display: flex;
@@ -61,20 +66,13 @@ a{
   align-items: center;
 }
 
-.btn-blue {
-  background: #0061FF;
-  color: #fff;
-  padding: 5px;
-}
-
 .navbar-menu .logo img {
   height: 40px;
 }
 
-/* hero section */
+/* ---------------------hero section---------------- */
 section {
   min-height: 600px;
-  /* padding: 20px 0; */
 }
 
 .hero {
@@ -136,7 +134,7 @@ section {
   font-size: 70px;
 }
 
-
+/*-------------------------- main---------------------- */
 .plans {
   background: #fff;
   padding: 3rem 1rem;
