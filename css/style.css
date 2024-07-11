@@ -6,7 +6,7 @@
 }
 
 /* Generics */
-header {
+.navbar {
   position: sticky;
   top: 0;
   left: 0;
@@ -14,8 +14,12 @@ header {
   z-index: 1;
   /* margin-bottom: 30px; */
   background: #f8f9fa;
-  padding: 1rem 0;
   border-bottom: 1px solid #ddd;
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 img{
@@ -34,19 +38,16 @@ a{
 
 /* utils */
 .container-base {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
+.flex{
+  display: flex;
 }
 
 /* header */
-.navbar{
-  height: 40px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .navbar ul{
   display: flex;
@@ -65,5 +66,45 @@ a{
 }
 
 
-/* main cestion */
+/* main section */
 
+section {
+  min-height: 600px;
+  padding: 60px 0;
+}
+
+.hero {
+    background-color:#B4D0E7 ;
+    padding: 3rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
