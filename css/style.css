@@ -176,12 +176,11 @@ section {
   margin-bottom: 0.5rem;
 }
 
-.plan .cta {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  color: #fff;
-  background: #007bff;
-  text-decoration: none;
-  border-radius: 5px;
+.plan .btn-blue {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-user, .fa-folder, .fa-share-nodes, .fa-users{
+  margin-right: 5px;
 }
