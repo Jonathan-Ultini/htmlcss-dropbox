@@ -5,7 +5,11 @@
   box-sizing: border-box;
 }
 
-/* Generics */
+body{
+  font-family: 'Open Sans' ;
+}
+
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -26,14 +30,14 @@ img {
   max-width: 100%;
 }
 
-ul {
+.navbar ul {
   list-style-type: none;
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-a {
+.navbar a {
   color: black;
   text-decoration: none;
 }
@@ -53,14 +57,13 @@ a {
 
 .flex {
   display: flex;
-  align-items: center;
 }
 
-.btn-blue {
+.navbar .btn-blue {
   background: #0061FF;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   text-align: center;
 }
 
@@ -68,72 +71,78 @@ a {
   background: #0041cc;
 }
 
-/* Header */
-.navbar ul {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.navbar-left ul {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.navbar-right ul {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.navbar-right a.btn-blue {
-  padding: 10px 20px;
-}
-
 /* Hero Section */
-.hero {
+.hero{
+  margin-top: 60px;
   background-color: #B4D0E7;
-  text-align: left;
-  padding: 100px 0;
+}
+
+.hero-row{
+  /* border: 1px solid #bd4545; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 1rem;
+  margin-bottom: 30px;
 }
 
-.hero .container-base {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.hero-col{
+  /* border: 2px dashed #2c6f39; */
+  padding: 1.5rem;
 }
 
-.hero-title {
-  font-size: 50px;
+.hero-col-text{
+  /* border: 2px dashed #2c6f39; */
+  padding: 1.5rem;
+  width: 30%;
+}
+
+.hero-title{
+  text-align: center;
   font-weight: bold;
-  color: #000;
-  margin-bottom: 1rem;
+  font-size: 30px;
 }
 
-.hero-text p {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 1.5rem;
+.hero-col-image{
+  /* border: 2px dashed #2c6f39; */
+  width: 70%;
+  position: relative;
+  overflow: visible;
 }
 
-.hero-text .btn-blue {
-  display: block;
-  margin-bottom: 10px;
+.hero-text p{
+  margin-bottom: 40px;
 }
 
-.hero-text .cancel-link {
-  display: block;
-  margin-bottom: 20px;
+.hero-text a.btn-blue {
+  background: #0061FF;
+  color: #fff;
+  padding: 10px 20px;
+  /* border-radius: 5px; */
+  text-align: center;
+  text-decoration: none;
 }
 
-.hero-text .arrow {
-  display: block;
-  font-size: 24px;
+.hero-text .margin p{
+  margin-top: 40px;
 }
+
+.hero-text .margin i{
+  margin-top: 80px;
+  color: black;
+  font-size: 50px;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  position: absolute;
+  bottom: -560px;
+  left: 0;
+  height: 560px;
+}
+
 
 /* Plans Section */
 .plans {
