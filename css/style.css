@@ -315,10 +315,7 @@ img {
 
 
 
-
-
-
-/* Contact Section */
+/* ------------------------Contact Section --------------------*/
 .contact {
   padding: 3rem 1rem;
   display: flex;
@@ -328,11 +325,13 @@ img {
 
 .contact .c-image img {
   max-width: 100%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border: 2px dashed black;
 }
 
 .contact .c-text {
   max-width: 50%;
+  border: 2px dashed black;
 }
 
 .contact .c-text h2 {
@@ -347,11 +346,15 @@ img {
 
 .contact .c-text a {
   font-size: 1rem;
-  color: #0061FF;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
 }
 
-/* Operations Section */
+
+
+/* ------------------------Operations Section -----------------*/
 .operation {
   padding: 3rem 1rem;
   text-align: center;
@@ -366,6 +369,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+
 }
 
 .operation .col {
