@@ -361,13 +361,7 @@ section.contact{
 .operation h1 {
   margin-bottom: 2rem;
   font-size: 2rem;
-}
-
-.operation .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-
+  text-align: left;
 }
 
 .operation .col {
@@ -391,4 +385,30 @@ section.contact{
   margin-bottom: 1rem;
   font-size: 1rem;
   color: #333;
+}
+
+
+
+/*-----------------uso migliore delle colonne----------------*/
+
+.operation .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row.cols-grow{
+  flex-grow: 1;
+}
+
+.row.cols-3{
+  gap: 20px;
+  
+}
+
+.row.cols-3 > .col {
+  flex-basis: calc(100% /3 - 80px /3);
+  min-height: 80px;
+  /* border: 2px dashed black; */
+  padding: 20px;
 }
