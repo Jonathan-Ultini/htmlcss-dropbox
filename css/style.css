@@ -9,7 +9,7 @@ body{
   font-family: 'Open Sans' ;
 }
 
-/* Navbar */
+/* ----------------------------------Navbar -------------------------*/
 .navbar {
   position: fixed;
   top: 0;
@@ -42,7 +42,7 @@ img {
   text-decoration: none;
 }
 
-/* Utils */
+/* --------------------------------Utils-------------------------*/
 .container-base {
   max-width: 1200px;
   margin: 0 auto;
@@ -71,7 +71,7 @@ img {
   background: #0041cc;
 }
 
-/* Hero Section */
+/* -------------------------------------Hero Section -----------------*/
 .hero{
   margin-top: 60px;
   background-color: #B4D0E7;
@@ -144,63 +144,174 @@ img {
 }
 
 
-/* Plans Section */
+/* ----------------------------------Plans Section--------------------- */
+
 .plans {
-  background: #fff;
-  padding: 3rem 1rem;
+  background-color: white;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.plans-row-title h1 {
+  margin-top: 40px;
   text-align: center;
+  font-size: 34px;
 }
 
-.plans h2 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
+.check, .checkno {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 8px;
 }
 
-.row {
+.check {
+  border: 4px solid #141e8b;
+  /* background-color: #141e8b; */
+}
+
+.checkno {
+  border: 2px solid #9395ac;
+}
+
+.marg-rg-big {
+  margin-right: 80px;
+}
+
+.plans-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.plans-col{
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  flex-basis: calc(100% / 3 - 20px);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plans-col-final{
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  /* width: 100%; */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.fa-title {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 30px;
-}
-
-.col {
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 10px;
-  flex-basis: calc(100% / 3 - 1rem);
-  flex: 1;
-}
-
-.col h3 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.col p {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 20px;
   font-weight: bold;
 }
 
-.col ul {
+.plans-col-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.plans-col-text h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.plans-col-text span {
+  font-size: 20px;
+  color: #0070f3;
+  display: block;
+  margin: 5px 0;
+}
+
+.plans-col-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666666;
+}
+
+.plans-col-text-options ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
-.col ul li {
-  margin-bottom: 0.5rem;
+.plans-col-text-options li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333333;
 }
 
-.col .btn-blue {
-  display: block;
-  margin-top: 1rem;
+.plans-col-text-options li i {
+  margin-right: 10px;
+  color: #0070f3;
 }
 
-.fa-user, .fa-folder, .fa-share-nodes, .fa-users {
-  margin-right: 5px;
+.btn-blue {
+  background-color: #0070f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
 }
+
+.link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.link a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.plans-features {
+  margin-top: 20px;
+}
+
+.plans-features h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.plans-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plans-features li {
+  padding: 5px 0;}
+
+
+
+
+
+
+
+
 
 /* Contact Section */
 .contact {
