@@ -328,8 +328,8 @@ section.contact{
 
 .c-text h2 {
   margin-bottom: 1rem;
-  font-size: 1.75rem; /* Ridotto il font-size per avvicinarsi di più all'esempio */
-  line-height: 1.2; /* Migliora la leggibilità */
+  font-size: 1.75rem; 
+  line-height: 1.2; 
 }
 
 .c-text p {
@@ -341,7 +341,7 @@ section.contact{
   font-size: 1rem;
   color: black;
   text-decoration: none;
-  background-color: white; /* Usato un background color simile all'esempio */
+  background-color: white;
   padding: 10px 20px;
   border: 1px solid black;
   display: inline-block;
@@ -355,7 +355,7 @@ section.contact{
 /* ------------------------Operations Section -----------------*/
 .operation {
   padding: 3rem 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 .operation h1 {
@@ -387,7 +387,20 @@ section.contact{
   color: #333;
 }
 
+.final-text h2{
+  font-size: 30px;
+  text-align: left;
+  padding: 50px 0;
+}
 
+.final-text a{
+  text-align: left;
+  padding: 50px 0;
+}
+
+.final-text{
+  margin-bottom: 60px;
+}
 
 /*-----------------uso migliore delle colonne----------------*/
 
