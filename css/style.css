@@ -75,6 +75,7 @@ img {
 .hero{
   margin-top: 60px;
   background-color: #B4D0E7;
+  
 }
 
 .hero-row{
@@ -105,21 +106,21 @@ img {
 .hero-col-image{
   /* border: 2px dashed #2c6f39; */
   width: 70%;
-  position: relative;
-  overflow: visible;
+  /* overflow: visible; */
 }
 
 .hero-text p{
   margin-bottom: 40px;
 }
 
-.hero-text a.btn-blue {
+.hero-text > .btn-blue {
   background: #0061FF;
   color: #fff;
   padding: 10px 20px;
   /* border-radius: 5px; */
   text-align: center;
   text-decoration: none;
+
 }
 
 .hero-text .margin p{
@@ -132,16 +133,7 @@ img {
   font-size: 50px;
 }
 
-.hero-image {
-  position: relative;
-}
 
-.hero-image img {
-  position: absolute;
-  bottom: -560px;
-  left: 0;
-  height: 560px;
-}
 
 
 /* ----------------------------------Plans Section--------------------- */
@@ -273,6 +265,7 @@ img {
   padding: 10px 20px;
   cursor: pointer;
   text-align: center;
+  /* TODO: da cambiare inline e creare altri bottoni non solo questo e cambiare nome*/
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
@@ -313,43 +306,51 @@ img {
 
 
 /* ------------------------Contact Section --------------------*/
-.contact {
-  padding: 3rem 1rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+section.contact{
+  padding: 80px 0;
 }
 
-.contact .c-image img {
+.c-image {
+  flex: 1 1 45%;
+}
+
+.c-image img {
   max-width: 100%;
-  /* border-radius: 10px; */
-  border: 2px dashed black;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
 
-.contact .c-text {
-  max-width: 50%;
-  border: 2px dashed black;
+.c-text {
+  flex: 1 1 45%;
+  padding: 40px;
 }
 
-.contact .c-text h2 {
+.c-text h2 {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.75rem; /* Ridotto il font-size per avvicinarsi di più all'esempio */
+  line-height: 1.2; /* Migliora la leggibilità */
 }
 
-.contact .c-text p {
-  margin-bottom: 1rem;
+.c-text p {
+  margin-bottom: 1.5rem;
   font-size: 1rem;
 }
 
-.contact .c-text a {
+.c-text a {
   font-size: 1rem;
   color: black;
   text-decoration: none;
+  background-color: white; /* Usato un background color simile all'esempio */
+  padding: 10px 20px;
   border: 1px solid black;
-  padding: 10px;
+  display: inline-block;
+  transition: background-color 0.3s;
 }
 
-
+.c-text a:hover {
+  background-color: #005bb5;
+}
 
 /* ------------------------Operations Section -----------------*/
 .operation {
