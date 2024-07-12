@@ -430,4 +430,86 @@ section.contact{
 
 
 
+.company {
+  padding: 2rem;
+  background-color: #e0f0ff;
+}
 
+.container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.com-grid {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.com-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+
+.com-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.com-image img {
+  max-width: 100%;
+  padding: 50px;
+}
+
+.com-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+.com-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.com-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section {
+  text-align: center;
+  background-color: #cce6ff;
+  padding: 2rem;
+}
+
+.cta-section h2 {
+  font-size: 1.75rem;
+  color: #800020;
+  margin-bottom: 1rem;
+}
+
+.btn-cta {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: burlywood;
+}
