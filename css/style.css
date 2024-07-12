@@ -431,13 +431,8 @@ section.contact{
 
 
 .company {
-  padding: 2rem;
+  /* padding: 2rem; */
   background-color: #e0f0ff;
-}
-
-.container-main {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .com-grid {
@@ -449,23 +444,31 @@ section.contact{
 .com-col {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  /* gap: 1rem; */
   flex: 1;
 }
 
+.com-row {
+  display: flex;
+  flex: 1;
+  /* gap: 1rem; */
+}
 
 .com-image {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  border: 1px solid #ddd;
+  aspect-ratio: 1;
+  color: white;
+  text-align: center;
 }
 
 .com-image img {
-  max-width: 100%;
-  padding: 50px;
+  max-width: 60%;
+  max-height: 60%;
+  /* padding: 40px; */
+  filter: invert(1);
 }
 
 .com-text {
@@ -512,4 +515,48 @@ section.contact{
 
 .btn-cta:hover {
   background-color: burlywood;
+}
+
+
+.com-designit {
+  background-color: #A2D39B; 
+}
+
+.com-asu {
+  background-color: #61082B; 
+}
+
+.com-uf {
+  background-color: #0093CE; 
+}
+
+.com-topps {
+  background-color: #FF1C1C; 
+  color: white;
+}
+
+.com-wbr {
+  background-color: #D5001F; 
+}
+
+.com-hearst {
+  background-color: #B4D0E7; 
+}
+
+.com-lonely {
+  background-color: #0D2481; 
+}
+
+.com-clear {
+  background-color: #FFD830; 
+}
+
+.logo {
+  max-width: 250px; /* Imposta la larghezza massima dell'immagine */
+  max-height: 200px; /* Imposta l'altezza massima dell'immagine */
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d5cfcf;
+  display: block; /* Assicura che l'immagine si comporti come un blocco */
+
 }
