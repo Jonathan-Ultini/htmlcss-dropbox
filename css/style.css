@@ -501,13 +501,14 @@ section.contact{
   font-size: 1.75rem;
   color: #800020;
   margin-bottom: 1rem;
+  margin-right: 100px;
 }
 
 .btn-cta {
-  font-size: 1rem;
   color: black;
   text-decoration: none;
   border: 1px solid black;
+  text-align: center;
   padding: 10px;
   background-color: #ffffff;
   transition: background-color 0.3s ease;
@@ -560,3 +561,5 @@ section.contact{
   display: block; /* Assicura che l'immagine si comporti come un blocco */
 
 }
+
+
