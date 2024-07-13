@@ -54,6 +54,20 @@ body{
   background: #0041cc;
 }
 
+.btn-width{
+  margin-top: 2opx;
+  width: 100%;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
+}
+
+
 
 /* ----------------------------------Navbar -------------------------*/
 .navbar {
@@ -138,16 +152,6 @@ img {
   margin-bottom: 40px;
 }
 
-/* .hero-text > .btn-blue {
-  background: #0061FF;
-  color: #fff;
-   padding: 10px 20px; 
-   border-radius: 5px; 
-  text-align: center;
-  text-decoration: none;
-
-} */
-
 .hero-text .margin p{
   margin-top: 40px;
 }
@@ -169,10 +173,10 @@ img {
 
 .plans {
   background-color: white;
-  padding: 40px 20px;
+  padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  border*/
   border-radius: 8px;
 }
 
@@ -226,7 +230,7 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 
@@ -282,16 +286,26 @@ img {
   color: #000000;
  
 }
+
+
 .fa-check{
   color: #0061FF;
 }
 
-
 .link {
-  text-align: center;
-  margin-top: 10px;
-  padding: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: left;
+  /* margin-top: 20px; */
+  padding: 40px 0;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 20%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .link a {
@@ -300,7 +314,7 @@ img {
 }
 
 .plans-features {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .plans-features h4 {
