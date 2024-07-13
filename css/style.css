@@ -11,6 +11,46 @@ body{
 /* TODO: CENTRALIZZARE IL TUTTO! */
 
 
+/* --------------------------------Utils-------------------------*/
+.container-base {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+
+/* TODO: inline su navbar e plans resto con inl-blk */
+
+.btn{
+  color: #ffffff;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+
+.btn-blue{
+  background-color: #0070f3;
+}
+
+.btn-blue:hover {
+  background: #0041cc;
+}
+
+
 /* ----------------------------------Navbar -------------------------*/
 .navbar {
   position: fixed;
@@ -37,6 +77,7 @@ img {
   display: flex;
   gap: 20px;
   align-items: center;
+  
 }
 
 .navbar a {
@@ -44,34 +85,12 @@ img {
   text-decoration: none;
 }
 
-/* --------------------------------Utils-------------------------*/
-.container-base {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
 
-.container-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.flex {
-  display: flex;
-}
-
-.navbar .btn-blue {
-  background: #0061FF;
+.navbar .btn {
   color: #fff;
-  padding: 10px 20px;
-  /* border-radius: 5px; */
-  text-align: center;
 }
 
-.btn-blue:hover {
-  background: #0041cc;
-}
+
 
 /* -------------------------------------Hero Section -----------------*/
 .hero{
@@ -115,15 +134,15 @@ img {
   margin-bottom: 40px;
 }
 
-.hero-text > .btn-blue {
+/* .hero-text > .btn-blue {
   background: #0061FF;
   color: #fff;
-  /* padding: 10px 20px; */
-  /* border-radius: 5px; */
+   padding: 10px 20px; 
+   border-radius: 5px; 
   text-align: center;
   text-decoration: none;
 
-}
+} */
 
 .hero-text .margin p{
   margin-top: 40px;
@@ -263,20 +282,6 @@ img {
   color: #0061FF;
 }
 
-.btn-blue {
-  background-color: #0070f3;
-  color: #ffffff;
-  border: none;
-  /* border-radius: 5px; */
-  padding: 10px 20px;
-  cursor: pointer;
-  text-align: center;
-  /* TODO: da cambiare inline e creare altri bottoni non solo questo e cambiare nome*/
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  width: 100%;
-}
 
 .link {
   text-align: center;
