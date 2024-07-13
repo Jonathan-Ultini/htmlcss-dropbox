@@ -75,7 +75,7 @@ img {
 
 /* -------------------------------------Hero Section -----------------*/
 .hero{
-  margin-top: 60px;
+  /* margin-top: 30px; */
   background-color: #B4D0E7;
   
 }
@@ -88,21 +88,21 @@ img {
   margin-bottom: 30px;
 }
 
-.hero-col{
-  /* border: 2px dashed #2c6f39; */
+/* .hero-col{
+  border: 2px dashed #2c6f39;
   padding: 1.5rem;
-}
+} */
 
 .hero-col-text{
   /* border: 2px dashed #2c6f39; */
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   width: 30%;
 }
 
 .hero-title{
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
+  text-align: left;
+  font-weight: 900;
+  font-size: 45px;
 }
 
 .hero-col-image{
@@ -118,7 +118,7 @@ img {
 .hero-text > .btn-blue {
   background: #0061FF;
   color: #fff;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   /* border-radius: 5px; */
   text-align: center;
   text-decoration: none;
@@ -130,12 +130,16 @@ img {
 }
 
 .hero-text .margin i{
-  margin-top: 80px;
+  /* margin-top: 80px; */
   color: black;
   font-size: 50px;
 }
 
 
+.hero .container-base{
+  position: relative;
+  top: 70px;
+}
 
 
 /* ----------------------------------Plans Section--------------------- */
@@ -308,6 +312,7 @@ img {
 
 
 /* ------------------------Contact Section --------------------*/
+
 section.contact{
   padding: 80px 0;
 }
@@ -430,7 +435,7 @@ section.contact{
 
 
 
-
+/*-----------------------Company--------------------------------*/
 
 .company {
   /* padding: 2rem; */
