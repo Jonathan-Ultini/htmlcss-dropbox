@@ -553,13 +553,81 @@ section.contact{
 }
 
 .logo {
-  max-width: 250px; /* Imposta la larghezza massima dell'immagine */
-  max-height: 200px; /* Imposta l'altezza massima dell'immagine */
+  max-width: 250px; 
+  max-height: 200px; 
   padding: 20px 0;
   margin-bottom: 20px;
   border-bottom: 1px solid #d5cfcf;
-  display: block; /* Assicura che l'immagine si comporti come un blocco */
+  display: block; 
+}
 
+
+
+/*------------------------FAQ-------------------------------*/
+
+.FAQ {
+  padding: 80px;
+}
+
+.faq-title {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.faq-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-item:nth-child(2) {
+  border-top: 1px solid #ddd;
+}
+
+.faq-item:last-child {
+  margin-bottom: 30px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.faq-question span {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0.5rem 0;
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top: 100%; 
+  background-color: white;
+  /* border: 1px solid #ddd; */
+  z-index: 1;
+}
+
+.faq-item:hover .faq-answer {
+  display: block;
+}
+
+.faq-item:hover .faq-question span {
+  transform: rotate(90deg); 
 }
 
 
