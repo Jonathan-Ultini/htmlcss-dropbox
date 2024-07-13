@@ -39,7 +39,11 @@ body{
   text-align: center;
   display: inline-block;
   text-decoration: none;
-  width: 100%;
+
+}
+
+.btn-padd{
+  padding: 10px;
 }
 
 .btn-blue{
