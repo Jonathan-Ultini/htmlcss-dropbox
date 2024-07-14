@@ -623,7 +623,7 @@ section.contact{
 
 .faq-title {
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .faq-title h2 {
@@ -633,7 +633,7 @@ section.contact{
 
 .faq-item {
   border-bottom: 1px solid #ddd;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   cursor: pointer;
   position: relative;
 }
@@ -670,7 +670,7 @@ section.contact{
   right: 0;
   top: 100%; 
   background-color: white;
-  /* border: 1px solid #ddd; */
+  border: 1px solid #ddd;
   z-index: 1;
 }
 
@@ -742,3 +742,6 @@ footer {
   padding: 20px;
 }
 
+.footer-language{
+  cursor: pointer;
+}
