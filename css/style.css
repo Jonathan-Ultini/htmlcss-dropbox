@@ -245,7 +245,7 @@ img {
 }
 
 .plans-col-text {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -314,7 +314,8 @@ img {
 }
 
 .plans-features {
-  margin-top: 50px;
+  margin-top: 20px;
+  text-align: left;
 }
 
 .plans-features h4 {
@@ -332,6 +333,21 @@ img {
   padding: 10px 0;
 }
 
+
+.plans-col-text-options a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.plans-col-content {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 /* ------------------------Contact Section --------------------*/
