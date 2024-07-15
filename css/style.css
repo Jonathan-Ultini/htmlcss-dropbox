@@ -210,7 +210,7 @@ img {
   margin-bottom: 40px;
 }
 
-.check, .checkno {
+.choice, .choice-no {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -220,12 +220,12 @@ img {
 
 }
 
-.check {
+.choice {
   border: 5px solid #0061FF;
   /* background-color: #141e8b; */
 }
 
-.checkno {
+.choice-no {
   border: 2px solid #9395ac;
 }
 
@@ -267,6 +267,48 @@ img {
   font-weight: bold;
 }
 
+.fa-title i {
+  margin-right: 10px;
+}
+
+.icon li{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+
+.icon li::before{
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon li.user::before{
+  font: var(--fa-font-solid);
+  content: '\f007';
+}
+
+.icon li.users::before{
+  font: var(--fa-font-solid);
+  content: '\f0c0';
+}
+
+.icon li.folder::before{
+  font: var(--fa-font-solid);
+  content: '\f07b';
+}
+.icon li.share::before{
+  font: var(--fa-font-solid);
+  content: '\f1e0';
+}
+
+.icon li.check::before{
+  font: var(--fa-font-solid);
+  content: '\f00c';
+  color: #0061FF;
+}
+
 .plans-col-text {
   text-align: left;
   margin-bottom: 20px;
@@ -290,29 +332,24 @@ img {
   color: #666666;
 }
 
-.plans-col-text-options ul {
+.plans-col-text ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.plans-col-text-options li {
+.plans-col-text li {
   padding: 10px 0;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   font-size: 14px;
   color: #333333;
 }
 
-.plans-col-text-options li i {
+.plans-col-text li i {
   margin-right: 10px;
   color: #000000;
  
-}
-
-
-.fa-check{
-  color: #0061FF;
 }
 
 .link {
@@ -591,7 +628,6 @@ section.contact{
 
 .com-topps {
   background-color: #FF1C1C; 
-  color: white;
 }
 
 .com-wbr {
