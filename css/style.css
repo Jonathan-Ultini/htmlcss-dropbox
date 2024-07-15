@@ -69,7 +69,8 @@ body{
 }
 
 .btn-white:hover {
-  background-color: #800020;
+  background-color: #0041cc;
+  color: white;
 }
 
 .mar-top-20 {
@@ -86,13 +87,16 @@ body{
   margin-bottom: 30px;
   }
 
-  .wid-30{
-    width: 30%;
-  }
-  .wid-70{
-    width: 70%;
-  }
+.wid-30{
+  width: 30%;
+}
+.wid-70{
+  width: 70%;
+}
   
+.marg-rg-big {
+  margin-right: 80px;
+}
 
 /* ----------------------------------Navbar -------------------------*/
 .navbar {
@@ -228,17 +232,11 @@ img {
 
 .choice {
   border: 5px solid #0061FF;
-  /* background-color: #141e8b; */
 }
 
 .choice-no {
   border: 2px solid #9395ac;
 }
-
-.marg-rg-big {
-  margin-right: 80px;
-}
-
 
 .plans-row {
   display: flex;
@@ -254,12 +252,10 @@ img {
   border-radius: 8px;
   flex-basis: calc(100% / 3 - 20px);
   flex-grow: 1;
-  /* gap: 10px; */
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 
@@ -326,10 +322,11 @@ img {
 }
 
 .plans-col-text span {
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: bold;
   color: black;
   display: block;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .plans-col-text p {
@@ -338,11 +335,7 @@ img {
   color: #666666;
 }
 
-.plans-col-text ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 
 .plans-col-text li {
   padding: 10px 0;
@@ -361,7 +354,6 @@ img {
 .link {
   position: relative;
   text-align: left;
-  /* margin-top: 20px; */
   padding: 40px 0;
 }
 
@@ -388,26 +380,9 @@ img {
   margin-bottom: 10px;
 }
 
-.plans-features ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .plans-features li {
   padding: 10px 0;
 }
-
-
-/* .plans-col-text-options a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0070f3;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-left: 20px;
-} */
 
 .plans-col-content {
   display: flex;
@@ -448,20 +423,10 @@ section.contact{
   font-size: 1rem;
 }
 
-.c-text a {
-  font-size: 1rem;
-  color: black;
-  text-decoration: none;
-  background-color: white;
-  padding: 10px 20px;
+.c-text a{
   border: 1px solid black;
-  display: inline-block;
-  transition: background-color 0.3s;
 }
 
-.c-text a:hover {
-  background-color: #005bb5;
-}
 
 /* ------------------------Operations Section -----------------*/
 .operation {
@@ -513,7 +478,6 @@ section.contact{
   margin-bottom: 60px;
 }
 
-/*-----------------uso migliore delle colonne----------------*/
 
 .operation .row{
   display: flex;
@@ -533,7 +497,6 @@ section.contact{
 .row.cols-3 > .col {
   flex-basis: calc(100% /3 - 80px /3);
   min-height: 80px;
-  /* border: 2px dashed black; */
   padding: 20px;
 }
 
@@ -624,6 +587,7 @@ section.contact{
   color: #800020;
 }
 
+
 .logo {
   max-width: 250px; 
   max-height: 200px; 
@@ -649,14 +613,14 @@ section.contact{
 }
 
 .faq-item {
-  border-bottom: 1px solid #ddd;
-  padding: 1.5rem 0;
+  border-bottom: 1px solid #999999;
+  padding: 2rem 0;
   cursor: pointer;
   position: relative;
 }
 
 .faq-item:nth-child(2) {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #999999;
 }
 
 .faq-item:last-child {
@@ -672,6 +636,7 @@ section.contact{
 .faq-question p {
   margin: 0;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .faq-question span {
@@ -681,14 +646,18 @@ section.contact{
 
 .faq-answer {
   display: none;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   position: absolute; 
   left: 0;
   right: 0;
   top: 100%; 
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid #999999;
   z-index: 1;
+}
+
+.faq-answer p{
+  font-weight: bold;
 }
 
 .faq-item:hover .faq-answer {
