@@ -8,8 +8,6 @@
 body{
   font-family: 'Open Sans' ;
 }
-/* TODO: CENTRALIZZARE IL TUTTO! */
-
 
 /* --------------------------------Utils-------------------------*/
 .container-base {
@@ -62,7 +60,6 @@ body{
 }
 
 .btn-width{
-  /* margin-top: 20px; */
   width: 100%;
 }
 
@@ -83,7 +80,6 @@ body{
   margin-top: 40px;
 }
 
-/* TODO: usarlo su plans per le linee */
 .short-border {
   width: 20%;
   border-bottom: 1px solid #d5cfcf;
@@ -124,8 +120,32 @@ img {
 .navbar a {
   color: black;
   text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
 }
 
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar .navbar-left li:first-child a::after{
+  display: none;
+}
+
+.navbar .navbar-right li:last-child a::after{
+  display: none;
+}
 
 .navbar .btn {
   color: #fff;
