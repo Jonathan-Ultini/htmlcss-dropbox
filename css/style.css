@@ -9,34 +9,37 @@ body{
   font-family: 'Open Sans' ;
 }
 
-/* --------------------------------Utils-------------------------*/
+
+
+/* Container Classes */
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 .container-base {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
 
-.container-main {
+.container-main,
+.container-cta {
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
 
-.container-cta{
-  max-width: 1000px;
-  margin: 0 auto;
+.container-cta {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 120px 1rem;
 }
 
-
+/* Flex Utility Class */
 .flex {
   display: flex;
 }
 
-.btn{
+/* Button Classes */
+.btn {
   color: #ffffff;
   border: none;
   padding: 5px 15px;
@@ -44,14 +47,13 @@ body{
   text-align: center;
   display: inline-block;
   text-decoration: none;
-
 }
 
-.btn-padd{
+.btn-padd {
   padding: 10px;
 }
 
-.btn-blue{
+.btn-blue {
   background-color: #0070f3;
 }
 
@@ -59,11 +61,11 @@ body{
   background: #0041cc;
 }
 
-.btn-width{
+.btn-width {
   width: 100%;
 }
 
-.btn-white{
+.btn-white {
   background-color: white;
   color: black;
 }
@@ -73,31 +75,32 @@ body{
   color: white;
 }
 
-.mar-top-20 {
-  margin-top: 20px;
-}
-
+/* Margin and Width Utilities */
 .mar-top-40 {
   margin-top: 40px;
+}
+
+.mar-top-20 {
+  margin-top: 20px;
 }
 
 .short-border {
   width: 20%;
   border-bottom: 1px solid #d5cfcf;
   margin-bottom: 30px;
-  }
+}
 
-.wid-30{
+.wid-30 {
   width: 30%;
 }
-.wid-70{
+
+.wid-70 {
   width: 70%;
 }
-  
+
 .marg-rg-big {
   margin-right: 80px;
 }
-
 /* ----------------------------------Navbar -------------------------*/
 .navbar {
   position: fixed;
@@ -149,11 +152,8 @@ img {
   width: 100%;
 }
 
-.navbar .navbar-left li:first-child a::after{
-  display: none;
-}
-
-.navbar .navbar-right li:last-child a::after{
+.navbar-left li:first-child a::after,
+.navbar-right li:last-child a::after {
   display: none;
 }
 
@@ -167,7 +167,6 @@ img {
 
 .hero{
   background-color: #B4D0E7;
-  
 }
 
 .hero-row{
@@ -206,10 +205,7 @@ img {
 
 .plans {
   background-color: white;
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  border*/
+  padding: 60px 0;
   border-radius: 8px;
 }
 
@@ -334,8 +330,6 @@ img {
   font-size: 14px;
   color: #666666;
 }
-
-
 
 .plans-col-text li {
   padding: 10px 0;
@@ -478,20 +472,10 @@ section.contact{
   margin-bottom: 60px;
 }
 
-
 .operation .row{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.row.cols-grow{
-  flex-grow: 1;
-}
-
-.row.cols-3{
-  gap: 20px;
-  
 }
 
 .row.cols-3 > .col {
@@ -528,6 +512,7 @@ section.contact{
   justify-content: center;
 }
 
+/* Specific colors for small squares in the first and third squares group */
 .squares:nth-of-type(1) .small-square:nth-of-type(1) {
   background-color: #A2D39B;
 }
