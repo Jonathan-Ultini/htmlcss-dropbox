@@ -626,7 +626,6 @@ section.contact{
   border-bottom: 1px solid #999999;
   padding: 2rem 0;
   cursor: pointer;
-  position: relative;
 }
 
 .faq-item:nth-child(2) {
@@ -657,16 +656,11 @@ section.contact{
 .faq-answer {
   display: none;
   padding: 1rem 0;
-  position: absolute; 
-  left: 0;
-  right: 0;
-  top: 100%; 
   background-color: white;
-  border: 1px solid #999999;
-  z-index: 1;
+  margin-top: 1rem;
 }
 
-.faq-answer p{
+.faq-answer p {
   font-weight: bold;
 }
 
@@ -675,9 +669,8 @@ section.contact{
 }
 
 .faq-item:hover .faq-question span {
-  transform: rotate(90deg); 
+  transform: rotate(90deg);
 }
-
 
 
 /* -------------------FOOTER----------------------*/
